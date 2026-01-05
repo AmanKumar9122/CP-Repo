@@ -36,3 +36,9 @@ public class Q30 {
         System.out.println(sb.toString());
     }
 }
+
+// Explanation:
+// This code reads multiple test cases. For each test case, it initializes a priority queue
+// with integers from 1 to n. It repeatedly takes the two largest numbers, computes their
+// ceiling average, and adds it back to the queue, while recording the operations. Finally,
+// it outputs the last remaining number and the sequence of operations performed.
