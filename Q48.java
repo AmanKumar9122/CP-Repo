@@ -5,7 +5,6 @@ public class Q48 {
     public static void main(String[] args) throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine());
-
         int m = Integer.parseInt(st.nextToken());
         int n = Integer.parseInt(st.nextToken());
 
