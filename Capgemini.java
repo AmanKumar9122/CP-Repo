@@ -46,65 +46,73 @@ public class Capgemini {
         // System.out.println(124/10);
 
         // if else ladder
-        int marks = 85;
-        if (marks >= 90) {
-            System.out.println("Grade A");
-        } else if (marks >= 80) {
-            System.out.println("Grade B");
-        } else if (marks >= 70) {
-            System.out.println("Grade C");
-        } else if (marks >= 60) {
-            System.out.println("Grade D");
-        } else {
-            System.out.println("Fail");
-        }
+        // int marks = 85;
+        // if (marks >= 90) {
+        //     System.out.println("Grade A");
+        // } else if (marks >= 80) {
+        //     System.out.println("Grade B");
+        // } else if (marks >= 70) {
+        //     System.out.println("Grade C");
+        // } else if (marks >= 60) {
+        //     System.out.println("Grade D");
+        // } else {
+        //     System.out.println("Fail");
+        // }
 
-        // if else
-        int number = 4;
-        if (number % 2 == 0) {
-            System.out.println("Even number");
-        } else {
-            System.out.println("Odd number");
-        }
+        // // if else
+        // int number = 4;
+        // if (number % 2 == 0) {
+        //     System.out.println("Even number");
+        // } else {
+        //     System.out.println("Odd number");
+        // }
 
-        // nested if else
-        int age = 20;
-        if (age >= 18) {
-            if (age >= 21) {
-                System.out.println("You are eligible to vote and drink alcohol.");
-            } else {
-                System.out.println("You are eligible to vote but not to drink alcohol.");
-            }
-        } else {
-            System.out.println("You are not eligible to vote.");
-        }
+        // // nested if else
+        // int age = 20;
+        // if (age >= 18) {
+        //     if (age >= 21) {
+        //         System.out.println("You are eligible to vote and drink alcohol.");
+        //     } else {
+        //         System.out.println("You are eligible to vote but not to drink alcohol.");
+        //     }
+        // } else {
+        //     System.out.println("You are not eligible to vote.");
+        // }
 
-        // switch case
-        int day = 3;
-        switch (day) {
-            case 1:
-                System.out.println("Monday");
-                break;
-            case 2:
-                System.out.println("Tuesday");
-                break;
-            case 3:
-                System.out.println("Wednesday");
-                break;
-            case 4:
-                System.out.println("Thursday");
-                break;
-            case 5:
-                System.out.println("Friday");
-                break;
-            case 6:
-                System.out.println("Saturday");
-                break;
-            case 7:
-                System.out.println("Sunday");
-                break;
-            default:
-                System.out.println("Invalid day");
-        }
+        // // switch case
+        // int day = 3;
+        // switch (day) {
+        //     case 1:
+        //         System.out.println("Monday");
+        //         break;
+        //     case 2:
+        //         System.out.println("Tuesday");
+        //         break;
+        //     case 3:
+        //         System.out.println("Wednesday");
+        //         break;
+        //     case 4:
+        //         System.out.println("Thursday");
+        //         break;
+        //     case 5:
+        //         System.out.println("Friday");
+        //         break;
+        //     case 6:
+        //         System.out.println("Saturday");
+        //         break;
+        //     case 7:
+        //         System.out.println("Sunday");
+        //         break;
+        //     default:
+        //         System.out.println("Invalid day");
+        // }
+
+        System.out.println(false && (10/0 > 1));
+        System.out.println(5>3 && 10 <= 8 || 6==6);
+        System.out.println(20-5*2==10?1:0);
+        System.out.println(8+12/3*(4-2));
+        int x = 3;
+        System.out.println(x++ * 2 + ++x);
+
     }
 }
