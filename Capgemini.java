@@ -107,12 +107,30 @@ public class Capgemini {
         //         System.out.println("Invalid day");
         // }
 
-        System.out.println(false && (10/0 > 1));
-        System.out.println(5>3 && 10 <= 8 || 6==6);
-        System.out.println(20-5*2==10?1:0);
-        System.out.println(8+12/3*(4-2));
-        int x = 3;
-        System.out.println(x++ * 2 + ++x);
+        // System.out.println(false && (10/0 > 1));
+        // System.out.println(5>3 && 10 <= 8 || 6==6);
+        // System.out.println(20-5*2==10?1:0);
+        // System.out.println(8+12/3*(4-2));
+        // int x = 3;
+        // System.out.println(x++ * 2 + ++x);
 
+        // for loop
+        for (int i = 1; i <= 5; i++) {
+            System.out.println("Iteration: " + i);
+        }
+
+        // while loop
+        int j = 1;  
+        while (j <= 5) {
+            System.out.println("Count: " + j);
+            j++;
+        }
+
+        // do-while loop
+        int k = 1;  
+        do {
+            System.out.println("Number: " + k);
+            k++;
+        } while (k <= 5);
     }
 }
