@@ -1,14 +1,32 @@
-import java.util.Scanner;
+import java.util.*;
 
 public class Q4A {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int w = sc.nextInt();
+        int t = sc.nextInt();
 
-        if (w > 2 && w % 2 == 0) {
-            System.out.println("YES");
-        } else {
-            System.out.println("NO");
+        while (t-- > 0) {
+            long a = sc.nextLong();
+            long b = sc.nextLong();
+            long c = sc.nextLong();
+            long n = sc.nextLong();
+
+            long total = a + b + c + n;
+
+            if (total % 3 != 0) {
+                System.out.println("NO");
+                continue;
+            }
+
+            long x = total / 3;
+            long max = Math.max(a, Math.max(b, c));
+
+            if (x >= max) {
+                System.out.println("YES");
+            } else {
+                System.out.println("NO");
+            }
         }
+        sc.close();
     }
 }

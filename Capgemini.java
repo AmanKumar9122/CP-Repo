@@ -139,28 +139,50 @@ public class Capgemini {
         //     System.out.println("Value: " + num);
         // }
         
-        // 1d array
-        int[] arr = new int[5];
-        arr[0] = 10;
-        arr[1] = 20;
-        arr[2] = 30;
-        arr[3] = 40;
-        arr[4] = 50;
-        for (int i = 0; i < arr.length; i++) {
-            System.out.println("Array element at index " + i + ": " + arr[i]);
-        }
+//         // 1d array
+//         int[] arr = new int[5];
+//         arr[0] = 10;
+//         arr[1] = 20;
+//         arr[2] = 30;
+//         arr[3] = 40;
+//         arr[4] = 50;
+//         for (int i = 0; i < arr.length; i++) {
+//             System.out.println("Array element at index " + i + ": " + arr[i]);
+//         }
 
-        // 2d array
-        int[][] matrix = {
-            {1, 2, 3},
-            {4, 5, 6},
-            {7, 8, 9}
-        };
-        for (int i = 0; i < matrix.length; i++) {
-            for (int j = 0; j < matrix[i].length; j++) {
-                System.out.print(matrix[i][j] + " ");
-            }
-            System.out.println();
-        }
+//         // 2d array
+//         int[][] matrix = {
+//             {1, 2, 3},
+//             {4, 5, 6},
+//             {7, 8, 9}
+//         };
+//         for (int i = 0; i < matrix.length; i++) {
+//             for (int j = 0; j < matrix[i].length; j++) {
+//                 System.out.print(matrix[i][j] + " ");
+//             }
+//             System.out.println();
+//         }
+//     }
+// }
+    }
+}
+
+class Student {
+    String name;
+    int age;
+    Student() {
+        this("Unknown", 0);  
+        System.out.println("Default constructor called");
+    }
+
+    Student(String name, int age) {
+        this.name = name;
+        this.age = age;
+        System.out.println("Parameterized constructor called");
+    }
+
+    public static void main(String[] args) {
+        Student s = new Student();
+        System.out.println(s.name + " " + s.age);
     }
 }
