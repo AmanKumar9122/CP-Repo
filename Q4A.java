@@ -112,25 +112,82 @@
 //     }
 // }
 
-// IS-A relationship example
-class female{
-    boolean beautiful;
-    double salary;
-    female(){
-        this.beautiful = true;
-        this.salary = 60000;
-    }
-    male m = new male(true, 50000);
+// // IS-A relationship example
+// class female{
+//     boolean beautiful;
+//     double salary;
+//     female(){
+//         this.beautiful = true;
+//         this.salary = 60000;
+//     }
+//     male m = new male(true, 50000);
 
-}
-class male{
-    boolean handsome;
-    double income;
-    male(boolean handsome, double income){
-        this.handsome = handsome;
-        this.income = income;
+// }
+// class male{
+//     boolean handsome;
+//     double income;
+//     male(boolean handsome, double income){
+//         this.handsome = handsome;
+//         this.income = income;
+//     }
+//     female f = new female();
+// }
+
+// Method Overriding Example
+class Animal {
+    void sound() {
+        System.out.println("Animal makes a sound");
     }
-    female f = new female();
+}
+class Dog extends Animal {
+    @Override
+    void sound() {
+        System.out.println("Dog barks");
+    }
+    public static void main(String[] args) {
+        Animal myAnimal = new Dog();
+        myAnimal.sound();  // Output: Dog barks
+    }
+}
+
+// downcasting and upcasting example
+// class Animal {
+//     void sound() {
+//         System.out.println("Animal makes a sound");
+//     }
+// }
+// class Dog extends Animal {
+//     void sound() {
+//         System.out.println("Dog barks");
+//     }
+//     void fetch() {
+//         System.out.println("Dog fetches the ball");
+//     }
+//     public static void main(String[] args) {
+//         Animal myAnimal = new Dog(); // Upcasting
+//         myAnimal.sound();  // Output: Dog barks
+//         Dog myDog = (Dog) myAnimal; // Downcasting
+//         myDog.fetch(); // Output: Dog fetches the ball
+//     }
+// }
+
+
+class A{
+    void M1(){
+        System.out.println("Class A Method M1");
+    }
+    void M2(){
+        System.out.println("Class A Method M2");
+    }
+}
+class B extends A{
+    void M1(){
+        System.out.println("Class B Method M1");
+    }
+        public static void main(String[] args) {
+        A obj = new B();
+        B b = (B) obj;
+    }
 }
 
 
