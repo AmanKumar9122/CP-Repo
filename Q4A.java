@@ -191,3 +191,22 @@ class B extends A{
 }
 
 
+// class casting exception example
+// class Animal {
+//     void sound() {
+//         System.out.println("Animal makes a sound");
+//     }
+// }
+// class Dog extends Animal {
+//     void sound() {
+//         System.out.println("Dog barks");
+//     }
+//     void fetch() {
+//         System.out.println("Dog fetches the ball");
+//     }
+//     public static void main(String[] args) {
+//         Animal myAnimal = new Animal(); // Not a Dog
+//         Dog myDog = (Dog) myAnimal; // This will throw ClassCastException
+//         myDog.fetch();
+//     }
+// }
