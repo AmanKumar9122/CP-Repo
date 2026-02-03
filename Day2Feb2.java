@@ -18,15 +18,17 @@ public class Day2Feb2 {
             arr[i] = sc.nextInt();
         }
         int k = sc.nextInt();
-        boolean used[] = new boolean[n];
         int count = 0;
         for (int i = 0; i < n; i++) {
             for (int j = i + 1; j < n; j++) {
-                if (arr[i] + arr[j] == k && !used[i] && !used[j]) {
+                if (arr[i] + arr[j] == k) {
                     System.out.println("(" + arr[i] + "," + arr[j] + ")");
-                    used[i] = true;
-                    used[j] = true;
+                    int temp = arr[j];
+                    arr[j] = arr[n-1];
+                    arr[n-1] = temp;
+                    n--;
                     count++;
+                    break;
                 }
             }
         }
