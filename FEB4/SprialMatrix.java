@@ -36,13 +36,19 @@ class SprialMatrix {
         return ans;
     }
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int m = sc.nextInt();
+        int[][] matrix = new int[n][m];
+        for(int i = 0; i < n; i++){
+            for(int j = 0; j < m; j++){
+                matrix[i][j] = sc.nextInt();
+            }
+        }
         SprialMatrix sm = new SprialMatrix();
-        int[][] matrix = {
-            {1, 2, 3},
-            {4, 5, 6},
-            {7, 8, 9}
-        };
         List<Integer> result = sm.spiralOrder(matrix);
-        System.out.println(result);
+        for(int num : result){
+            System.out.print(num + " ");
+        }
     }
 }
