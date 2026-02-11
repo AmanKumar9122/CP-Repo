@@ -1,3 +1,4 @@
+//Q3
 import java.io.*;
 import java.util.*;
 
@@ -11,10 +12,7 @@ class Result {
      */
 
     public static List<String> findSuspiciousUsers(List<List<String>> logs) {
-
-        // Step 1: Group logs by user
         Map<String, List<List<String>>> userLogsMap = new HashMap<>();
-
         for (List<String> log : logs) {
             String user = log.get(0);
             userLogsMap
@@ -22,7 +20,6 @@ class Result {
                     .add(log);
         }
 
-        // Step 2: Identify suspicious users
         List<String> suspiciousUsers = new ArrayList<>();
         for (String user : userLogsMap.keySet()) {
             List<List<String>> userLogs = userLogsMap.get(user);
