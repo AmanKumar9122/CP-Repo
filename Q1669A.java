@@ -1,3 +1,4 @@
+// Q1669A 
 import java.util.*;
 public class Q1669A {
     public static void main(String[] args) {
