@@ -1,4 +1,5 @@
 //Q1
+// core java questions
 import java.io.*;
 import java.util.*;
 
