@@ -1,0 +1,4 @@
+Java is great. Java is powerful.
+Python is great too.
+Java and Python are popular.
+Java developers love Java.
